@@ -13,19 +13,19 @@ const app = new PIXI.Application({ width: 740, height: 560, backgroundColor: 0x1
 document.body.appendChild(app.view);
 
 app.loader
-    .add('M00_000.jpg', 'M00_000.jpg')
-    .add('M01_000.jpg', 'M01_000.jpg')
-    .add('M02_000.jpg', 'M02_000.jpg')
-    .add('M03_000.jpg', 'M03_000.jpg')
-    .add('M04_000.jpg', 'M04_000.jpg')
-    .add('M05_000.jpg', 'M05_000.jpg')
-    .add('M06_000.jpg', 'M06_000.jpg')
-    .add('M07_000.jpg', 'M07_000.jpg')
-    .add('M08_000.jpg', 'M08_000.jpg')
-    .add('M09_000.jpg', 'M09_000.jpg')
-    .add('M10_000.jpg', 'M10_000.jpg')
-    .add('M11_000.jpg', 'M11_000.jpg')
-    .add('M12_000.jpg', 'M12_000.jpg')
+    .add('./images/M00_000.jpg', './images/M00_000.jpg')
+    .add('./images/M01_000.jpg', './images/M01_000.jpg')
+    .add('./images/M02_000.jpg', './images/M02_000.jpg')
+    .add('./images/M03_000.jpg', './images/M03_000.jpg')
+    .add('./images/M04_000.jpg', './images/M04_000.jpg')
+    .add('./images/M05_000.jpg', './images/M05_000.jpg')
+    .add('./images/M06_000.jpg', './images/M06_000.jpg')
+    .add('./images/M07_000.jpg', './images/M07_000.jpg')
+    .add('./images/M08_000.jpg', './images/M08_000.jpg')
+    .add('./images/M09_000.jpg', './images/M09_000.jpg')
+    .add('./images/M10_000.jpg', './images/M10_000.jpg')
+    .add('./images/M11_000.jpg', './images/M11_000.jpg')
+    .add('./images/M12_000.jpg', './images/M12_000.jpg')
     .load(onAssetsLoaded);
 
 const REEL_WIDTH = 150;
@@ -35,19 +35,19 @@ const SYMBOL_SIZE = 150;
 function onAssetsLoaded() {
     // Create different slot symbols.
     const slotTextures = [
-        PIXI.Texture.from('M00_000.jpg'),
-        PIXI.Texture.from('M01_000.jpg'),
-        PIXI.Texture.from('M02_000.jpg'),
-        PIXI.Texture.from('M03_000.jpg'),
-        PIXI.Texture.from('M04_000.jpg'),
-        PIXI.Texture.from('M05_000.jpg'),
-        PIXI.Texture.from('M06_000.jpg'),
-        PIXI.Texture.from('M07_000.jpg'),
-        PIXI.Texture.from('M08_000.jpg'),
-        PIXI.Texture.from('M09_000.jpg'),
-        PIXI.Texture.from('M10_000.jpg'),
-        PIXI.Texture.from('M11_000.jpg'),
-        PIXI.Texture.from('M12_000.jpg'),
+        PIXI.Texture.from('./images/M00_000.jpg'),
+        PIXI.Texture.from('./images/M01_000.jpg'),
+        PIXI.Texture.from('./images/M02_000.jpg'),
+        PIXI.Texture.from('./images/M03_000.jpg'),
+        PIXI.Texture.from('./images/M04_000.jpg'),
+        PIXI.Texture.from('./images/M05_000.jpg'),
+        PIXI.Texture.from('./images/M06_000.jpg'),
+        PIXI.Texture.from('./images/M07_000.jpg'),
+        PIXI.Texture.from('./images/M08_000.jpg'),
+        PIXI.Texture.from('./images/M09_000.jpg'),
+        PIXI.Texture.from('./images/M10_000.jpg'),
+        PIXI.Texture.from('./images/M11_000.jpg'),
+        PIXI.Texture.from('./images/M12_000.jpg'),
     ];
 
     // Build the reels
